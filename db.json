@@ -14,6 +14,86 @@
       "id": 3,
       "name": "Wonder Woman",
       "alterEgo": "Princess Diana"
+    },
+    {
+      "id": 4,
+      "name": "Flash",
+      "alterEgo": "Barry Allen"
+    },
+    {
+      "id": 5,
+      "name": "Green Lantern",
+      "alterEgo": "Hal Jordan"
+    },
+    {
+      "id": 6,
+      "name": "Aquaman",
+      "alterEgo": "Arthur Curry"
+    },
+    {
+      "id": 7,
+      "name": "Cyborg",
+      "alterEgo": "Victor Stone"
+    },
+    {
+      "id": 8,
+      "name": "Shazam",
+      "alterEgo": "Billy Batson"
+    },
+    {
+      "id": 9,
+      "name": "Green Arrow",
+      "alterEgo": "Oliver Queen"
+    },
+    {
+      "id": 10,
+      "name": "Black Canary",
+      "alterEgo": "Dinah Drake"
+    },
+    {
+      "id": 11,
+      "name": "Supergirl",
+      "alterEgo": "Kara Zor-El"
+    },
+    {
+      "id": 12,
+      "name": "Hawkgirl",
+      "alterEgo": "Shiera Hall"
+    },
+    {
+      "id": 13,
+      "name": "Martian Manhunter",
+      "alterEgo": "J'onn J'onzz"
+    },
+    {
+      "id": 14,
+      "name": "Zatanna",
+      "alterEgo": "Zatanna Zatara"
+    },
+    {
+      "id": 15,
+      "name": "Firestorm",
+      "alterEgo": "Ronnie Raymond"
+    },
+    {
+      "id": 16,
+      "name": "Atom",
+      "alterEgo": "Ray Palmer"
+    },
+    {
+      "id": 17,
+      "name": "Black Lightning",
+      "alterEgo": "Jefferson Pierce"
+    },
+    {
+      "id": 18,
+      "name": "Vixen",
+      "alterEgo": "Mari McCabe"
+    },
+    {
+      "id": 19,
+      "name": "Hawkman",
+      "alterEgo": "Carter Hall"
     }
   ]
 }
