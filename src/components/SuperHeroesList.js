@@ -1,4 +1,5 @@
 import useSuperHeroesData from "../hooks/useSuperHeroesData";
+import {Link} from "react-router-dom";
 
 const onSuccessfulFetch = (data) => {
     console.log('Perform side effect on successful fetch', data);
@@ -26,9 +27,13 @@ const SuperHeroesList = ({isEnabled}) => {
 
     return (
         <>
-            {data && data.map(hero => {
-                return <div key={hero}>{hero}</div>
-            })}
+            {data && data.data.map(hero => {
+                return <div key={hero.id}>
+                    <Link to={`/super-hero/${hero.id}`}>
+                        {hero.name}
+                    </Link>
+                </div>})
+            }
         </>
     )
 };

@@ -12,9 +12,9 @@ const useSuperHeroesData = ({onSuccessfulFetch, onFailedFetch, isEnabled}) => {
         onSuccess: onSuccessfulFetch,
         onError: onFailedFetch,
         enabled: isEnabled ? isEnabled : false,
-        select: (data) => {
-            return data.data.map(hero => hero.name)
-        }
+        // select: (data) => {
+        //     return data.data.map(hero => hero.name)
+        // }
     })
 };
 
