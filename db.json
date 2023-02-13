@@ -95,5 +95,31 @@
       "name": "Hawkman",
       "alterEgo": "Carter Hall"
     }
+  ],
+  "friends": [
+    {
+      "id": 1,
+      "name": "Chandler Bing"
+    },
+    {
+      "id": 2,
+      "name": "Ross Geller"
+    },
+    {
+      "id": 3,
+      "name": "Joey Tribbiani"
+    },
+    {
+      "id": 4,
+      "name": "Monica Geller"
+    },
+    {
+      "id": 5,
+      "name": "Rachel Green"
+    },
+    {
+      "id": 6,
+      "name": "Phoebe Buffay"
+    }
   ]
 }
