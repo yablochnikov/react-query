@@ -1,5 +1,5 @@
 import React from 'react';
-import {useQuery, useMutation} from "react-query";
+import {useQuery, useMutation, useQueryClient} from "react-query";
 import axios from "axios";
 
 const fetchSuperHeroes = () => {
@@ -10,18 +10,19 @@ const addSuperHero = (hero) => {
     return axios.post('http://localhost:4000/superheroes', hero)
 }
 
-export const useSuperHeroesData = ({onSuccessfulFetch, onFailedFetch, isEnabled}) => {
-    console.log(isEnabled)
+export const useSuperHeroesData = (onSuccess, onError) => {
     return useQuery('super-heroes', fetchSuperHeroes,{
-        onSuccess: onSuccessfulFetch,
-        onError: onFailedFetch,
-        enabled: isEnabled ? isEnabled : false,
-        // select: (data) => {
-        //     return data.data.map(hero => hero.name)
-        // }
+        onSuccess,
+        onError,
     })
 };
 
 export const useAddSuperHeroData = () => {
-    return useMutation(addSuperHero)
+    const queryClient = useQueryClient()
+
+    return useMutation(addSuperHero, {
+        onSuccess: () => {
+            queryClient.invalidateQueries(['super-heroes'])
+        }
+    })
 }

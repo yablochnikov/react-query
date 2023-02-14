@@ -16,10 +16,10 @@ const SuperHeroesList = () => {
     const [name, setName] = useState('')
     const [alterEgo, setAlterEgo] = useState('')
 
-    const { isLoading, isError, error, data, isFetching, refetch } = useSuperHeroesData({
+    const { isLoading, isError, error, data, isFetching } = useSuperHeroesData(
         onSuccess,
         onError,
-    });
+    );
 
     const {mutate: addHero, isError: newHeroIsError, error: newHeroError, isLoading: newHeroIsLoading} = useAddSuperHeroData()
 
@@ -45,7 +45,6 @@ const SuperHeroesList = () => {
                 {newHeroIsLoading ? <h2>Adding...</h2> : null}
                 {newHeroIsError ? <h2>{newHeroError.message}</h2> : null}
             </div>
-            <button onClick={refetch}>Fetch heroes</button>
             {data && data.data.map(hero => {
                 return <div key={hero.id}>
                     <Link to={`/super-hero/${hero.id}`}>
