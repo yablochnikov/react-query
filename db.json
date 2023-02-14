@@ -133,5 +133,32 @@
       "id": "codevolution",
       "courses": ["react", "angular", "vue"]
     }
+  ],
+  "colors": [
+    {"id": 0, "name": "red"},
+    {"id": 1, "name": "green"},
+    {"id": 2, "name": "blue"},
+    {"id": 3, "name": "yellow"},
+    {"id": 4, "name": "orange"},
+    {"id": 5, "name": "indigo"},
+    {"id": 6, "name": "violet"},
+    {"id": 7, "name": "cyan"},
+    {"id": 8, "name": "magenta"},
+    {"id": 9, "name": "lime"},
+    {"id": 10, "name": "pink"},
+    {"id": 11, "name": "teal"},
+    {"id": 12, "name": "lavender"},
+    {"id": 13, "name": "brown"},
+    {"id": 14, "name": "beige"},
+    {"id": 15, "name": "maroon"},
+    {"id": 16, "name": "mint"},
+    {"id": 17, "name": "olive"},
+    {"id": 18, "name": "coral"},
+    {"id": 19, "name": "navy"},
+    {"id": 20, "name": "grey"},
+    {"id": 21, "name": "white"},
+    {"id": 22, "name": "black"},
+    {"id": 23, "name": "purple"},
+    {"id": 24, "name": "turquoise"}
   ]
 }

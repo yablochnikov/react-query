@@ -9,6 +9,7 @@ import SuperHeroDetails from "./components/SuperHeroDetails.page";
 import ParallelQueries from "./components/ParallelQueries.page";
 import DynamicParallel from "./components/DynamicParallel.page";
 import { DependentQueries } from './components/DependentQueries.page'
+import PaginatedQueries from './components/PaginatedQueries.page'
 
 const queryClient = new QueryClient()
 
@@ -34,10 +35,15 @@ function App() {
             <li>
               <Link to='/dependent-queries'>Dependent queries</Link>
             </li>
-
+            <li>
+              <Link to='/paginated-queries'>Paginated queries</Link>
+            </li>
           </ul>
         </nav>
         <Switch>
+          <Route path='/paginated-queries'>
+            <PaginatedQueries />
+          </Route>
           <Route path='/dependent-queries'>
             <DependentQueries email="vishwas@example.com"/>
           </Route>
