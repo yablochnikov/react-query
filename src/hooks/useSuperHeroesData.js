@@ -7,7 +7,7 @@ const fetchSuperHeroes = () => {
 }
 
 const addSuperHero = (hero) => {
-    return axios.post('http://localhost:4000/superheroes', hero)
+    return axios.post('http://localhost:4000/superheroes1', hero)
 }
 
 export const useSuperHeroesData = (onSuccess, onError) => {
@@ -21,15 +21,25 @@ export const useAddSuperHeroData = () => {
     const queryClient = useQueryClient()
 
     return useMutation(addSuperHero, {
-        onSuccess: (data) => {
-            // queryClient.invalidateQueries(['super-heroes'])
+        onMutate: async (newHero) => {
+            await queryClient.cancelQueries('super-heroes')
+
+            const previousHeroes = queryClient.getQueryData('super-heroes')
+
             queryClient.setQueryData('super-heroes', (oldData) => {
                 return {
                     ...oldData,
-                    data: [...oldData.data, data.data]
+                    data: [...oldData.data, { id: oldData.length + 1, ...newHero}]
                 }
             })
-        }
 
+           return { previousHeroes }
+        },
+        onError: (_error, _newHero, rollback) => {
+            queryClient.setQueryData('super-heroes', rollback.previousHeroes)
+        },
+        onSettled: () => {
+            queryClient.invalidateQueries('super-heroes')
+        },
     })
 }

@@ -28,7 +28,7 @@ const SuperHeroesList = () => {
         addHero(hero)
     }
 
-    if( isLoading || isFetching ) {
+    if( isLoading ) {
         return  <h2>Loading...</h2>
     }
 
