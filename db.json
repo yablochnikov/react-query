@@ -121,5 +121,17 @@
       "id": 6,
       "name": "Phoebe Buffay"
     }
+  ],
+  "users": [
+    {
+      "id": "vishwas@example.com",
+      "channelId": "codevolution"
+    }
+  ],
+  "channels": [
+    {
+      "id": "codevolution",
+      "courses": ["react", "angular", "vue"]
+    }
   ]
 }
