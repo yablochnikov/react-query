@@ -99,6 +99,11 @@
       "name": "John",
       "alterEgo": "Doe",
       "id": 20
+    },
+    {
+      "name": "zadsa",
+      "alterEgo": "asdasd",
+      "id": 21
     }
   ],
   "friends": [
