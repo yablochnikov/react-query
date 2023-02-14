@@ -2,7 +2,7 @@ import useSuperHeroesData from "../hooks/useSuperHeroesData";
 import {Link} from "react-router-dom";
 
 const onSuccessfulFetch = (data) => {
-    console.log('Perform side effect on successful fetch', data);
+    console.log('Perform side effect on successful fetch', data)
 }
 
 const onFailedFetch = (error) => {
