@@ -22,9 +22,9 @@ const PaginatedQueries = () => {
 
     return (
        <>
-           <div>
+           <h2>
                Paginated Queries
-           </div>
+           </h2>
            <div>
                <button disabled={page <= 1} onClick={() => setPage(page => page - 1)}>Previous page</button>
                <button disabled={page >= 5} onClick={() => setPage(page => page + 1)}>Next page</button>

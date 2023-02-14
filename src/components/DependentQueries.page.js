@@ -19,9 +19,9 @@ export const DependentQueries =({email}) => {
 
     return (
      <>
-         <div>
+         <h2>
              Dependent Queries
-         </div>
+         </h2>
          {courses?.data.courses.map(course => {
              return <div key={course}>
                  {course}

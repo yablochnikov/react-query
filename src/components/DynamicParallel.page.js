@@ -18,9 +18,9 @@ const DynamicParallel = ({ heroIds }) => {
     console.log({ queryResults })
 
   return (
-    <div>
+    <h2>
       Dynamic Parallel
-    </div>
+    </h2>
   );
 };
 

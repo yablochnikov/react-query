@@ -24,17 +24,17 @@ const ParallelQueries = () => {
 
   return (
     <>
-      <div>
+      <h2>
         ParallelQueries
-      </div>
+      </h2>
       <div>
-        <h2>Super Heroes</h2>
+        <h3>Super Heroes</h3>
         <ul>
           {superHeroes && superHeroes.data.map(hero => {
             return <li key={hero.name}>{hero.name}</li>
           })}
         </ul>
-        <h2>Friends</h2>
+        <h3>Friends</h3>
         <ul>
           {friends && friends.data.map(friend => {
             return <li key={friend.name}>{friend.name}</li>
